@@ -1,9 +1,11 @@
 import React from 'react';
 
+import { Container } from './styles';
+
 export default function Checkout() {
     return (
-        <div>
-            <h1>pagina pagamento</h1>
-        </div>
+        <Container>
+            <h1>página pagamento</h1>
+        </Container>
     );
 }
