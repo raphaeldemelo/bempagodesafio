@@ -1,6 +1,7 @@
 import React from 'react';
-import LogoGit from '../../assets/adesivo.png'
-import logo from '../../assets/logoheader.png'
+import LogoGit from '../../assets/adesivo.png';
+import logo from '../../assets/logoheader.png';
+import Created from '../../Components/Created';
 
 import {
     Container,
@@ -29,9 +30,9 @@ export default function Home() {
 
                 <Content>
                     <Texto>Formulário</Texto>
-                    <Titulo>Compras de adesivos<span style={{color: '#2500BB'}}>.</span></Titulo>
+                    <Titulo>Compras de adesivos<span style={{ color: '#2500BB' }}>.</span></Titulo>
                     <Texto>Escolha seu adesivo</Texto>
-                    <Checkbox style={{marginTop: 20}}>
+                    <Checkbox style={{ marginTop: 20 }}>
                         <Input type='checkbox' />
                         <Texto style={{ marginLeft: 5 }}>React</Texto>
                     </Checkbox>
@@ -41,10 +42,10 @@ export default function Home() {
                     </Checkbox>
                     <Checkbox>
                         <Input type='checkbox' />
-                        <Texto style={{ marginLeft: 5 }}o>Vue</Texto>
+                        <Texto style={{ marginLeft: 5 }} o>Vue</Texto>
                     </Checkbox>
 
-                    <Titulo style={{marginTop: 20}}>Observações</Titulo>
+                    <Titulo style={{ marginTop: 20 }}>Observações</Titulo>
                     <TextArea placeholder='escreva seu comentário...' />
 
                     <ButtonArea>
@@ -58,6 +59,8 @@ export default function Home() {
             <SectionRight>
                 <Imagem src={LogoGit} />
             </SectionRight>
+
+            <Created />
         </Container >
     );
 }

@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #d1d1d1;
+    background: linear-gradient( #fff, #ddd);
 `;
 
 export const SectionLeft = styled.div`
@@ -92,10 +92,10 @@ background: linear-gradient( #2500BB, #03228F);
 //------------------------------------------
 export const SectionRight = styled.div`
 flex: 1;
-background-color: #d1d1d1;
 display:flex;
 align-items: center;
 justify-content: center;
+background: linear-gradient( #fff, #ddd);
 `;
 
 export const Imagem = styled.img``;
