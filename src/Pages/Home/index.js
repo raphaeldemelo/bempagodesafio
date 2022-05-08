@@ -32,7 +32,7 @@ export default function Home() {
                     <Texto>Formulário</Texto>
                     <Titulo>Compras de adesivos<span style={{ color: '#2500BB' }}>.</span></Titulo>
                     <Texto>Escolha seu adesivo</Texto>
-                    <Checkbox style={{ marginTop: 20 }}>
+                    <Checkbox style={{ marginTop: 30 }}>
                         <Input type='checkbox' />
                         <Texto style={{ marginLeft: 5 }}>React</Texto>
                     </Checkbox>
@@ -40,7 +40,7 @@ export default function Home() {
                         <Input type='checkbox' />
                         <Texto style={{ marginLeft: 5 }}>Angular</Texto>
                     </Checkbox>
-                    <Checkbox>
+                    <Checkbox style={{ marginBottom: 50 }}>
                         <Input type='checkbox' />
                         <Texto style={{ marginLeft: 5 }} o>Vue</Texto>
                     </Checkbox>
@@ -48,11 +48,11 @@ export default function Home() {
                     <Titulo style={{ marginTop: 20 }}>Observações</Titulo>
                     <TextArea placeholder='escreva seu comentário...' />
 
-                    <ButtonArea>
-                        <Botao>
-                            <Texto>Comprar</Texto>
-                        </Botao>
-                    </ButtonArea>
+                <ButtonArea>
+                    <Botao>
+                        <Texto>Comprar</Texto>
+                    </Botao>
+                </ButtonArea>
                 </Content>
             </SectionLeft>
 
