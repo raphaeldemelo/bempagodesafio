@@ -1,7 +1,7 @@
 .container{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 15px;
+    right: 15px;
     height: 80px;
     width: 80px;
     display: flex;
@@ -10,11 +10,14 @@
     background-color: #fff;
     justify-content: space-between;
     transition: 0.75s;
+    border: 5px solid #272A37;
+    align-items: center;
 }
 
 .container:hover{
     width: 360px;
     transition: 0.75s;
+    border: none;
 }
 
 .container:hover .user-detail{
@@ -48,4 +51,8 @@
     top: 0%;
     width: 100%;
     object-fit: contain;
+}
+
+.text{
+padding-right: 100px;
 }

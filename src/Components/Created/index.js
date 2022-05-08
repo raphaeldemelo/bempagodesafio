@@ -21,11 +21,11 @@ export default function Created() {
           <img src={Perfil} />
         </div>
 
-        <div>
+        <div className="text">
           <p>Criado por</p>
           <p>@raphaeldemelo</p>
         </div>
-        
+
       </div>
 
     </div>
