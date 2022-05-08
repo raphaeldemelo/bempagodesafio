@@ -40,12 +40,12 @@ export default function Home() {
                         <Input type='checkbox' />
                         <Texto style={{ marginLeft: 5 }}>Angular</Texto>
                     </Checkbox>
-                    <Checkbox style={{ marginBottom: 50 }}>
+                    <Checkbox style={{ marginBottom: 30 }}>
                         <Input type='checkbox' />
                         <Texto style={{ marginLeft: 5 }} o>Vue</Texto>
                     </Checkbox>
 
-                    <Titulo style={{ marginTop: 20 }}>Observações</Titulo>
+                    <Titulo style={{ marginBottom: 20 }}>Observações</Titulo>
                     <TextArea placeholder='escreva seu comentário...' />
 
                 <ButtonArea>
