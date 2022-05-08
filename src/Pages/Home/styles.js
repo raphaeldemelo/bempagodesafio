@@ -19,9 +19,9 @@ justify-content: center;
 `;
 
 export const Header = styled.div`
-position: absolute;
-top: 30px;
-left: 100px;
+position: relative;
+top: -100px;
+left: 10%;
 
 `;
 
@@ -59,8 +59,8 @@ margin-top: 10px;
 
 export const TextArea = styled.textarea`
 border-radius: 10px;
-max-width: 750px;
-min-width: 750px;
+max-width: 90%;
+min-width: 90%;
 max-height: 200px;
 min-height: 200px;
 padding: 30px;

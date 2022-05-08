@@ -1,0 +1,51 @@
+.container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #fff;
+    justify-content: space-between;
+    transition: 0.75s;
+}
+
+.container:hover{
+    width: 360px;
+    transition: 0.75s;
+}
+
+.container:hover .user-detail{
+    width: 100%;
+}
+
+.user-detail{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.75s;
+}
+
+.image{
+    height: 80px;
+    min-width: 80px;
+    position: relative;
+    padding: 0%;
+    overflow: hidden;
+    border-radius:  50%;
+}
+
+.image img{
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    object-fit: contain;
+}

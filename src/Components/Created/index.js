@@ -1,12 +1,33 @@
 import React from 'react';
 
-import { Container, Texto, Titulo } from './styles';
+import Perfil from '../../assets/perfil.jpg';
+import {
+  Container,
+  Detalhes,
+  AreaImagem,
+  Imagem,
+  Texto,
+  Titulo,
+  AreaTexto
+} from './styles';
+
+import './styles.css';
 
 export default function Created() {
   return (
-    <Container>
-      <Titulo>Criado por:</Titulo>
-      <Texto>@RaphaeldeMelo</Texto>
-    </Container>
+    <div className="container">
+      <div className="user-detail">
+        <div className="image">
+          <img src={Perfil} />
+        </div>
+
+        <div>
+          <p>Criado por</p>
+          <p>@raphaeldemelo</p>
+        </div>
+        
+      </div>
+
+    </div>
   );
 }
