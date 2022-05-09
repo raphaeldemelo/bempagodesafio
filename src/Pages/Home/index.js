@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoGit from '../../assets/adesivo.png';
 import logo from '../../assets/logoheader.png';
 import Created from '../../Components/Created';
@@ -48,11 +49,13 @@ export default function Home() {
                     <Titulo style={{ marginBottom: 20 }}>Observações</Titulo>
                     <TextArea placeholder='escreva seu comentário...' />
 
-                <ButtonArea>
-                    <Botao>
-                        <Texto>Comprar</Texto>
-                    </Botao>
-                </ButtonArea>
+                    <ButtonArea>
+                        <Link to="/checkout">
+                            <Botao>
+                                <Texto>Comprar</Texto>
+                            </Botao>
+                        </Link>
+                    </ButtonArea>
                 </Content>
             </SectionLeft>
 
