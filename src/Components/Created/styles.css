@@ -50,6 +50,8 @@
     top: 0%;
     width: 100%;
     object-fit: contain;
+    border: 5px solid #fff;
+    border-radius: 50%;
 }
 
 .text{
