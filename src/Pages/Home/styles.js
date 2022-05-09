@@ -98,4 +98,5 @@ justify-content: center;
 background: linear-gradient( #fff, #ddd);
 `;
 
-export const Imagem = styled.img``;
+export const Imagem = styled.img`
+`;
