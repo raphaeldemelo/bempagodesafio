@@ -2,20 +2,18 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
+    justify-content: space-around;
     width: 100vw;
     height: 100vh;
     background: linear-gradient( #fff, #ddd);
 `;
 
 export const SectionLeft = styled.div`
-flex: 1;
-background-color: #272A37;
 padding: 10px;
-border-top-right-radius: 50px;
-border-bottom-right-radius: 50px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin-left: 2%;
 `;
 
 export const Header = styled.div`
