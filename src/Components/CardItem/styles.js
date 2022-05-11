@@ -9,6 +9,7 @@ border-radius: 10px;
 box-shadow: 0px 6px 13px 2px rgba(0,0,0,0.1);
 display: flex;
 justify-content: space-between;
+margin-bottom: 10px;
 `;
 
 export const Titulo = styled.strong``;

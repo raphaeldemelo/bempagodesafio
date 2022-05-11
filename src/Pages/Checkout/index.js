@@ -40,6 +40,7 @@ export default function Checkout() {
                 </Title>
 
                 <CardItem />
+                <CardItem />
             </SectionLeft>
 
             <SectionRight>
