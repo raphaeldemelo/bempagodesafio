@@ -5,6 +5,7 @@ import { TiShoppingCart } from 'react-icons/ti'
 import { Link } from 'react-router-dom';
 
 import CardCheckout from '../../Components/CardCheckout';
+import CardItem from '../../Components/CardItem';
 
 
 import {
@@ -12,8 +13,9 @@ import {
     SectionLeft,
     SectionRight,
     Header,
+    Title,
     Span,
-
+    AreaTitulo,
 } from './styles';
 
 export default function Checkout() {
@@ -24,10 +26,20 @@ export default function Checkout() {
                     <Link to='/'>
                         <div style={{ alignItems: 'center', display: 'flex' }}>
                             <BiArrowBack size={30} color="#000" />
-                            <span style={{ marginLeft: 10 }}>Página anterior</span>
+                            <Span style={{ marginLeft: 10 }}>Página anterior</Span>
                         </div>
                     </Link>
                 </Header>
+
+                <Title>
+                    <TiShoppingCart size={60} color="#000" />
+                    <AreaTitulo>
+                        <h1 style={{ lineHeight: 1 }}>Carrinho</h1>
+                        <Span>Você tem 2 item(s) no carrinho</Span>
+                    </AreaTitulo>
+                </Title>
+
+                <CardItem />
             </SectionLeft>
 
             <SectionRight>

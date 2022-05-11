@@ -14,7 +14,6 @@ align-items: center;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
 `;
 
 export const Header = styled.div`
@@ -27,8 +26,20 @@ justify-content: flex-start;
 `;
 
 
+export const Title = styled.div`
+width: 90%;
+padding: 35px;
+display: flex;
+align-items: center;
+`;
 
+export const Span = styled.span`
+color: #000;
+`;
 
+export const AreaTitulo = styled.div`
+
+`;
 //------------------------------------------
 
 export const SectionRight = styled.div`
