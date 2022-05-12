@@ -26,16 +26,18 @@ export const Title = styled.div`
 display:flex;
 width: 90%;
 flex-direction: column;
+align-items: center;
 `;
 
 export const Span = styled.span`
 color: #E5E5E5;
 font-size: 24px;
+font-weight: lighter;
 `;
 
 export const Strong = styled.strong`
 color: #fff;
-font-size: 40px;
+font-size: 24px;
 `;
 
 export const Content = styled.div`
@@ -49,25 +51,25 @@ display: flex;
 align-items: center;
 `;
 
-export const TextArea = styled.div`
+export const Fomulario = styled.div`
 display:flex;
 width: 90%;
 flex-direction: column;
 `;
 
-export const Input = styled.textarea`
-border-radius: 10px;
-max-width: 100%;
-min-width: 100%;
-max-height: 200px;
-min-height: 200px;
-padding: 30px;
+export const Input = styled.input`
+width: 80%;
+height:50px;
 background-color: #525561;
 border: 2px solid #2312EA;
-border-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
 font-size: 20px;
 caret-color: #fff;
 color:#fff;
+margin-bottom: 10px;
+padding: 10px;
+border-right-style: none;
 
 ::placeholder{
     color: #ddd;
@@ -95,4 +97,27 @@ export const Option = styled.h2`
 color: #E5E5E5;
 margin-left: 5px;
 font-size: 18px;
+`;
+
+export const AreaForm = styled.div`
+display: flex;
+width: 90%;
+justify-content: space-between;
+`;
+
+export const AreaInput = styled.div`
+display: flex;
+`;
+
+export const AreaIcon = styled.div`
+width: 50px;
+height: 50px;
+align-items: center;
+display: flex;
+background-color: #525561;
+justify-content: center;
+border: 2px solid #2312EA;
+border-left-style: none;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
 `;
