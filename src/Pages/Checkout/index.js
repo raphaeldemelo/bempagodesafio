@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import CardCheckout from '../../Components/CardCheckout';
 import CardItem from '../../Components/CardItem';
 
-
 import {
     Container,
     SectionLeft,
@@ -40,7 +39,7 @@ export default function Checkout() {
                 </Title>
 
                 <CardItem />
-                <CardItem />
+
             </SectionLeft>
 
             <SectionRight>

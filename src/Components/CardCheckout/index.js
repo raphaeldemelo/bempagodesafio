@@ -32,7 +32,7 @@ export default function CardCheckout() {
     function changeFocus(e) {
         setFocused(e.target.name);
     }
-    
+
 
     return (
         <Container>
@@ -119,11 +119,9 @@ export default function CardCheckout() {
             </Fomulario>
 
             <Footer>
-                <Link to="/">
-                    <Botao>
-                        <Span>Finalizar</Span>
-                    </Botao>
-                </Link>
+                <Botao onClick={() => alert('clicou em finalizar')}>
+                    <Span>Finalizar</Span>
+                </Botao>
             </Footer>
 
 

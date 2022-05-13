@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logoheader.png';
 
@@ -18,7 +18,12 @@ import {
     Option,
 } from './styles';
 
+import { UserContext } from '../../Contexts/user';
+
 export default function CardBuy() {
+
+    const { observacao, setObservacao } = useContext(UserContext);
+
     return (
         <Container>
             <Header>
@@ -27,7 +32,7 @@ export default function CardBuy() {
 
             <Title>
                 <Span>Formulário</Span>
-                <Strong>Compras de adesivos<span style={{ color:'#2500BB'}}>.</span></Strong>
+                <Strong>Compras de adesivos<span style={{ color: '#2500BB' }}>.</span></Strong>
                 <Span>Quais adesivos deseja?</Span>
             </Title>
 
@@ -48,7 +53,11 @@ export default function CardBuy() {
 
             <TextArea>
                 <Span style={{ marginBottom: 10 }}>Observações</Span>
-                <Input placeholder="se quiser, deixe um comentário..." />
+                <Input
+                    value={observacao}
+                    onChange={(e) => setObservacao(e.target.value)}
+                    placeholder="se quiser, deixe um comentário..."
+                />
             </TextArea>
 
             <Footer>
