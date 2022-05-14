@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import { BiArrowBack } from 'react-icons/bi'
 import { TiShoppingCart } from 'react-icons/ti'
@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 
 import CardCheckout from '../../Components/CardCheckout';
 import CardItem from '../../Components/CardItem';
+import Modal from '../../Components/Modal';
+import { UserContext } from '../../Contexts/user';
 
 import {
     Container,
@@ -18,6 +20,9 @@ import {
 } from './styles';
 
 export default function Checkout() {
+
+    const { isVisible } = useContext(UserContext);
+
     return (
         <Container>
             <SectionLeft>
@@ -41,6 +46,8 @@ export default function Checkout() {
                 <CardItem />
 
             </SectionLeft>
+
+            {isVisible ? <Modal /> : null}
 
             <SectionRight>
                 <CardCheckout />

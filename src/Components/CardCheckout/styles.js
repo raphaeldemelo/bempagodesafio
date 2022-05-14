@@ -55,10 +55,11 @@ export const Fomulario = styled.div`
 display:flex;
 width: 90%;
 flex-direction: column;
+align-items: center;
 `;
 
 export const Input = styled.input`
-width: 80%;
+width: 100%;
 height:50px;
 background-color: #525561;
 border: 2px solid #2312EA;
@@ -78,7 +79,7 @@ border-right-style: none;
 
 export const Footer = styled.div`
 display:flex;
-width: 90%;
+width: 80%;
 justify-content: flex-end;
 border-top: 1px solid #525252;
 padding-top: 30px;
@@ -107,6 +108,7 @@ justify-content: space-between;
 
 export const AreaInput = styled.div`
 display: flex;
+width: 90%;
 `;
 
 export const AreaIcon = styled.div`

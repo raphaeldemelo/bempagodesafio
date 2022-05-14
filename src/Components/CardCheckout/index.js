@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { BsPerson } from 'react-icons/bs'
 import { FiCreditCard, FiLock, FiCalendar } from 'react-icons/fi'
 import CreditCard from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css';
+import Modal from '../Modal';
+import { UserContext } from '../../Contexts/user';
 
 import {
     Container,
@@ -28,6 +30,8 @@ export default function CardCheckout() {
     const [Validade, setValidade] = useState('');
     const [Cvc, setCvc] = useState('');
     const [Focused, setFocused] = useState('');
+    const { setIsVisible } = useContext(UserContext);
+
 
     function changeFocus(e) {
         setFocused(e.target.name);
@@ -56,9 +60,6 @@ export default function CardCheckout() {
             </Title>
 
             <Fomulario>
-
-
-
                 <AreaInput>
                     <Input
                         type="text"
@@ -119,11 +120,10 @@ export default function CardCheckout() {
             </Fomulario>
 
             <Footer>
-                <Botao onClick={() => alert('clicou em finalizar')}>
+                <Botao onClick={() => setIsVisible(true)}>
                     <Span>Finalizar</Span>
                 </Botao>
             </Footer>
-
 
         </Container >
     );

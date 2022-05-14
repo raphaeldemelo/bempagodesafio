@@ -8,6 +8,7 @@ export default function UserProvider({ children }) {
     const [react, setReact] = useState('React');
     const [angular, setAngular] = useState('Angular');
     const [vue, setVue] = useState('Vue');
+    const [isVisible, setIsVisible] = useState(false);
 
     return (
         <UserContext.Provider
@@ -20,6 +21,8 @@ export default function UserProvider({ children }) {
                 setAngular,
                 vue,
                 setVue,
+                isVisible,
+                setIsVisible,
             }}>
             {children}
         </UserContext.Provider>
